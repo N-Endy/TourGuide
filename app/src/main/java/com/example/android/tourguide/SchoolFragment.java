@@ -30,28 +30,28 @@ public class SchoolFragment extends Fragment {
         // Create a list of places
         final ArrayList<Place> places = new ArrayList<>();
 
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
-        places.add(new Place(R.string.school_genius, R.string.address_genius));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
 
         // Create an {@link PlacesAdapter}, whose data source is a list of {@link Place}s. The
         // adapter knows how to create list items for each item in the list.
-        LocationAdapter adapter = new LocationAdapter(getActivity(), places, R.color.primary_dark_color);
+        LocationAdapter adapter = new LocationAdapter(getActivity(), places, R.color.purple_200);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
