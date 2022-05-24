@@ -37,8 +37,7 @@ public class Place {
      * @param addressId is the address of the place
      * @param imageResourceId is the drawable resource ID for the image associated with the place
      */
-    public Place(int nameId, int addressId, int imageResourceId,
-                int audioResourceId) {
+    public Place(int nameId, int addressId, int imageResourceId) {
         mNameId = nameId;
         mAddressId = addressId;
         mImageResourceId = imageResourceId;
