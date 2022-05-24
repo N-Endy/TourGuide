@@ -1,5 +1,6 @@
 package com.example.android.tourguide;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -61,6 +63,25 @@ public class SchoolFragment extends Fragment {
         // Make the {@link ListView} use the {@link PlacesAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Place} in the list.
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                // Get the clicked view from the list
+                Place item = (Place) listView.getAdapter().getItem(position);
+
+                // Create a new Intent to open activity on Information for clicked view
+                Intent informationIntent = new Intent(getActivity(), InformationActivity.class);
+
+                // Individual items from clicked view
+                informationIntent.putExtra("name", item.getNameId());
+                informationIntent.putExtra("address", item.getAddressId());
+                informationIntent.putExtra("image", item.getImageResourceId());
+
+                // Start the new activity
+                startActivity(informationIntent);
+            }
+        });
 
         return rootView;
     }
