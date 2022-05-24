@@ -58,7 +58,7 @@ public class SchoolFragment extends Fragment {
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
         // place_list.xml layout file.
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link PlacesAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Place} in the list.
@@ -71,7 +71,7 @@ public class SchoolFragment extends Fragment {
                 Place item = (Place) listView.getAdapter().getItem(position);
 
                 // Create a new Intent to open activity on Information for clicked view
-                Intent informationIntent = new Intent(getActivity(), InformationActivity.class);
+                Intent informationIntent = new Intent(getContext(), InformationActivity.class);
 
                 // Individual items from clicked view
                 informationIntent.putExtra("name", item.getNameId());

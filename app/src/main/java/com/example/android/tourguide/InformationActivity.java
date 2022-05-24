@@ -3,6 +3,8 @@ package com.example.android.tourguide;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class InformationActivity extends AppCompatActivity {
 
@@ -35,6 +37,16 @@ public class InformationActivity extends AppCompatActivity {
      * @param image
      */
     private void setIncomingIntent(String placeName, String placeAddress, int image) {
-        // Find and set text
+        // Find and set name text
+        TextView name = findViewById(R.id.info_name);
+        name.setText(placeName);
+
+        // Find and set address text
+        TextView address = findViewById(R.id.info_address);
+        address.setText(placeAddress);
+
+        // Find and set image
+        ImageView imageView = findViewById(R.id.info_image);
+        imageView.setImageResource(image);
     }
 }
