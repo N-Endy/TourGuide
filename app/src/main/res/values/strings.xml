@@ -2,4 +2,7 @@
     <string name="app_name">TourGuide</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="school_genius">Genius NUR/PRY School</string>
+    <string name="address_genius">31, Femi Isara Street, Eyita Estate, Ikorodu</string>
 </resources>
