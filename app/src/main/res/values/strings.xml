@@ -3,6 +3,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    // String for name of the fragments
+    <string name="category_school">Schools</string>
+    <string name="category_fast_food">Food</string>
+    <string name="category_hospital">Hospital</string>
+    <string name="category_church">Church</string>
+
     <string name="school_genius">Genius NUR/PRY School</string>
     <string name="address_genius">31, Femi Isara Street, Eyita Estate, Ikorodu</string>
 </resources>
