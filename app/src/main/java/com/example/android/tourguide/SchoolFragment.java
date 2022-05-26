@@ -42,7 +42,6 @@ public class SchoolFragment extends Fragment {
         places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
         places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
         places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
-        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
 
         // Create an {@link PlacesAdapter}, whose data source is a list of {@link Place}s. The
         // adapter knows how to create list items for each item in the list.
