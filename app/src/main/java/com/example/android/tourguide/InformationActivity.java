@@ -3,6 +3,7 @@ package com.example.android.tourguide;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,13 +21,14 @@ public class InformationActivity extends AppCompatActivity {
      * Method to get extras from incoming Intent
      */
     private void getIncomingIntent() {
-        Bundle bundle = getIntent().getExtras();
-        if (bundle != null) {
-            String name = bundle.getString("name");
-            String address = bundle.getString("address");
-            int image = bundle.getInt("image");
+        if(getIntent().hasExtra("name") && getIntent().hasExtra("address")) {
+            Log.v("intents", "getIncomingIntent: Yes it has intent!");
+            String name = getIntent().getStringExtra("name");
+            Log.i("name", "getIncomingIntent: " + name);
+            String address = getIntent().getStringExtra("address");
+            Log.i("address", "getIncomingIntent: " + address);
 
-            setIncomingIntent(name, address, image);
+            setIncomingIntent(name, address);
         }
     }
 
@@ -34,9 +36,8 @@ public class InformationActivity extends AppCompatActivity {
      *
      * @param placeName name of location gotten from Intent
      * @param placeAddress address of location gotten from Intent
-     * @param image
      */
-    private void setIncomingIntent(String placeName, String placeAddress, int image) {
+    private void setIncomingIntent(String placeName, String placeAddress) {
         // Find and set name text
         TextView name = findViewById(R.id.info_name);
         name.setText(placeName);
@@ -47,6 +48,10 @@ public class InformationActivity extends AppCompatActivity {
 
         // Find and set image
         ImageView imageView = findViewById(R.id.info_image);
-        imageView.setImageResource(image);
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
+            int image = bundle.getInt("image");
+            imageView.setImageResource(image);
+        }
     }
 }

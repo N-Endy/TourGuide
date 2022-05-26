@@ -71,7 +71,7 @@ public class SchoolFragment extends Fragment {
                 Place item = (Place) listView.getAdapter().getItem(position);
 
                 // Create a new Intent to open activity on Information for clicked view
-                Intent informationIntent = new Intent(getContext(), InformationActivity.class);
+                Intent informationIntent = new Intent(getActivity(), InformationActivity.class);
 
                 // Individual items from clicked view
                 informationIntent.putExtra("name", item.getNameId());
