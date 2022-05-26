@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,24 +33,16 @@ public class SchoolFragment extends Fragment {
         // Create a list of places
         final ArrayList<Place> places = new ArrayList<>();
 
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
-        places.add(new Place(R.string.school_genius, R.string.address_genius, R.drawable.cover1));
+        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
+        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
+        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
+        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
+        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
+        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
+        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
+        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
+        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
+        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
 
         // Create an {@link PlacesAdapter}, whose data source is a list of {@link Place}s. The
         // adapter knows how to create list items for each item in the list.
@@ -69,17 +62,17 @@ public class SchoolFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 // Get the clicked view from the list
                 Place item = (Place) listView.getAdapter().getItem(position);
+                Log.i("SchoolFragment", "onItemClick: " + item.getImageResourceId());
 
                 // Create a new Intent to open activity on Information for clicked view
                 Intent informationIntent = new Intent(getActivity(), InformationActivity.class);
 
-                Bundle bundle = new Bundle();
+
 
                 // Individual items from clicked view
-                bundle.putInt("name", item.getNameId());
-                bundle.putInt("address", item.getAddressId());
-                bundle.putInt("image", item.getImageResourceId());
-                informationIntent.putExtra("bundleExtra", bundle);
+                informationIntent.putExtra("name", item.getNameId());
+                informationIntent.putExtra("address", item.getAddressId());
+                informationIntent.putExtra("image", item.getImageResourceId());
                 // Start the new activity
                 startActivity(informationIntent);
             }

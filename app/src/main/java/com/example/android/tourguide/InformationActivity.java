@@ -21,14 +21,15 @@ public class InformationActivity extends AppCompatActivity {
      * Method to get extras from incoming Intent
      */
     private void getIncomingIntent() {
-        if(getIntent().hasExtra("bundleExtra") ) {
+        Bundle bundle = getIntent().getExtras();
+        if(bundle != null ) {
             Log.v("intents", "getIncomingIntent: Yes it has intent!");
-            Bundle bundle = getIntent().getExtras();
-            int name = bundle.getInt("name");
+            String name = bundle.getString("name");
             Log.i("name", "getIncomingIntent: " + name);
-            int address = bundle.getInt("address");
+            String address = bundle.getString("address");
             Log.i("address", "getIncomingIntent: " + address);
-            setIncomingIntent(String.valueOf(name), String.valueOf(address));
+            int image = bundle.getInt("image");
+            setIncomingIntent(name, address, image);
         }
     }
 
@@ -37,7 +38,7 @@ public class InformationActivity extends AppCompatActivity {
      * @param placeName name of location gotten from Intent
      * @param placeAddress address of location gotten from Intent
      */
-    private void setIncomingIntent(String placeName, String placeAddress) {
+    private void setIncomingIntent(String placeName, String placeAddress, int image) {
         // Find and set name text
         TextView name = findViewById(R.id.info_name);
         name.setText(placeName);
@@ -48,10 +49,6 @@ public class InformationActivity extends AppCompatActivity {
 
         // Find and set image
         ImageView imageView = findViewById(R.id.info_image);
-        Bundle bundle = getIntent().getExtras();
-        if (bundle != null) {
-            int image = bundle.getInt("image");
-            imageView.setImageResource(image);
-        }
+        imageView.setImageResource(image);
     }
 }
