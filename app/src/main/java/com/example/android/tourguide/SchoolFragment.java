@@ -73,11 +73,13 @@ public class SchoolFragment extends Fragment {
                 // Create a new Intent to open activity on Information for clicked view
                 Intent informationIntent = new Intent(getActivity(), InformationActivity.class);
 
-                // Individual items from clicked view
-                informationIntent.putExtra("name", item.getNameId());
-                informationIntent.putExtra("address", item.getAddressId());
-                informationIntent.putExtra("image", item.getImageResourceId());
+                Bundle bundle = new Bundle();
 
+                // Individual items from clicked view
+                bundle.putInt("name", item.getNameId());
+                bundle.putInt("address", item.getAddressId());
+                bundle.putInt("image", item.getImageResourceId());
+                informationIntent.putExtra("bundleExtra", bundle);
                 // Start the new activity
                 startActivity(informationIntent);
             }

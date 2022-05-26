@@ -21,14 +21,14 @@ public class InformationActivity extends AppCompatActivity {
      * Method to get extras from incoming Intent
      */
     private void getIncomingIntent() {
-        if(getIntent().hasExtra("name") && getIntent().hasExtra("address")) {
+        if(getIntent().hasExtra("bundleExtra") ) {
             Log.v("intents", "getIncomingIntent: Yes it has intent!");
-            String name = getIntent().getStringExtra("name");
+            Bundle bundle = getIntent().getExtras();
+            int name = bundle.getInt("name");
             Log.i("name", "getIncomingIntent: " + name);
-            String address = getIntent().getStringExtra("address");
+            int address = bundle.getInt("address");
             Log.i("address", "getIncomingIntent: " + address);
-
-            setIncomingIntent(name, address);
+            setIncomingIntent(String.valueOf(name), String.valueOf(address));
         }
     }
 
