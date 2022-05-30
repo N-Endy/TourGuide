@@ -33,15 +33,16 @@ public class SchoolFragment extends Fragment {
         // Create a list of places
         final ArrayList<Place> places = new ArrayList<>();
 
-        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
-        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
-        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
-        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
-        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
-        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
-        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
-        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
-        places.add(new Place("R.string.school_genius", "R.string.address_genius", R.drawable.cover1));
+        places.add(new Place("Genius Preparatory School", "31 Femi Isara Street", R.drawable.school1));
+        places.add(new Place("Landmark College", "5/11 Olayinka Ogunfile Street", R.drawable.school2));
+        places.add(new Place("Lyncrest Schools", "Kayode Shokunbi Street", R.drawable.school3));
+        places.add(new Place("At-Tanzeel Schools", "3, Faniyi Street, Ebute road", R.drawable.school4));
+        places.add(new Place("Centcas School", " Lowa, 23 Olufunke Mabadeje St", R.drawable.school5));
+        places.add(new Place("ROOSEVELT SCHOOLS,", "170, igbogbo Bayeku Road", R.drawable.school6));
+        places.add(new Place("LightHouse International School", "Ijede Rd", R.drawable.school7));
+        places.add(new Place("Great Joy Schools", "13/15 Sola Kola Street", R.drawable.school8));
+        places.add(new Place("The Primelight Schools", "Francis Onajinrin St", R.drawable.school9));
+        places.add(new Place("Unique Blossom School", "1 Ikorodu-Ososun Rd", R.drawable.school10));
 
         // Create an {@link PlacesAdapter}, whose data source is a list of {@link Place}s. The
         // adapter knows how to create list items for each item in the list.
@@ -61,7 +62,6 @@ public class SchoolFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 // Get the clicked view from the list
                 Place item = (Place) listView.getAdapter().getItem(position);
-                Log.i("SchoolFragment", "onItemClick: " + item.getImageResourceId());
 
                 // Create a new Intent to open activity on Information for clicked view
                 Intent informationIntent = new Intent(getActivity(), InformationActivity.class);

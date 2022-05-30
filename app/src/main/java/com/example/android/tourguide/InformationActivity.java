@@ -23,11 +23,8 @@ public class InformationActivity extends AppCompatActivity {
     private void getIncomingIntent() {
         Bundle bundle = getIntent().getExtras();
         if(bundle != null ) {
-            Log.v("intents", "getIncomingIntent: Yes it has intent!");
             String name = bundle.getString("name");
-            Log.i("name", "getIncomingIntent: " + name);
             String address = bundle.getString("address");
-            Log.i("address", "getIncomingIntent: " + address);
             int image = bundle.getInt("image");
             setIncomingIntent(name, address, image);
         }
