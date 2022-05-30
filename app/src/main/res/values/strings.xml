@@ -7,8 +7,5 @@
     <string name="category_school">Schools</string>
     <string name="category_fast_food">Food</string>
     <string name="category_hospital">Hospital</string>
-    <string name="category_church">Church</string>
-
-    <string name="school_genius">Genius NUR/PRY School</string>
-    <string name="address_genius">31, Femi Isara Street, Eyita Estate, Ikorodu</string>
+    <string name="category_accommodation">Accommodation</string>
 </resources>
