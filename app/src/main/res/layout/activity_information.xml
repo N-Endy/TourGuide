@@ -11,27 +11,27 @@
         android:id="@+id/info_image"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop" />
 
     <TextView
         android:id="@+id/info_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:text=""
-        android:layout_marginTop="16dp"
         android:layout_marginLeft="16dp"
-        android:textStyle="bold"
-        android:textColor="#444"/>
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="#444"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/info_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
         android:layout_marginLeft="16dp"
-        android:textSize="16sp"
-        android:textColor="#444"/>
+        android:text=""
+        android:textColor="#444"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/info_description"
@@ -39,6 +39,6 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:text=""
-        android:textColor="#444"/>
+        android:textColor="#444" />
 
 </LinearLayout>
