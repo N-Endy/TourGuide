@@ -42,7 +42,7 @@ public class PlacesAdapter extends FragmentPagerAdapter {
         } else if (position == 3) {
             return new HospitalFragment();
         } else {
-            return new ChurchFragment();
+            return new HotelFragment();
         }
     }
 
@@ -62,7 +62,7 @@ public class PlacesAdapter extends FragmentPagerAdapter {
         } else if (position == 1) {
             return mContext.getString(R.string.category_fast_food);
         } else if (position == 2) {
-            return mContext.getString(R.string.category_church);
+            return mContext.getString(R.string.category_hotel);
         } else {
             return mContext.getString(R.string.category_hospital);
         }

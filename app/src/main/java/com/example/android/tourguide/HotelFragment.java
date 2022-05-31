@@ -15,12 +15,12 @@ import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ChurchFragment} factory method to
+ * Use the {@link} factory method to
  * create an instance of this fragment.
  */
-public class ChurchFragment extends Fragment {
+public class HotelFragment extends Fragment {
 
-    public ChurchFragment() {
+    public HotelFragment() {
         // Required empty public constructor
     }
 
@@ -33,16 +33,16 @@ public class ChurchFragment extends Fragment {
         // Create a list of places
         final ArrayList<Place> places = new ArrayList<>();
 
-        places.add(new Place("Genius Preparatory School", "31 Femi Isara Street", R.drawable.school1));
-        places.add(new Place("Landmark College", "5/11 Olayinka Ogunfile Street", R.drawable.school2));
-        places.add(new Place("Lyncrest Schools", "Kayode Shokunbi Street", R.drawable.school3));
-        places.add(new Place("At-Tanzeel Schools", "3, Faniyi Street, Ebute road", R.drawable.school4));
-        places.add(new Place("Centcas School", " Lowa, 23 Olufunke Mabadeje St", R.drawable.school5));
-        places.add(new Place("ROOSEVELT SCHOOLS,", "170, igbogbo Bayeku Road", R.drawable.school6));
-        places.add(new Place("LightHouse International School", "Ijede Rd", R.drawable.school7));
-        places.add(new Place("Great Joy Schools", "13/15 Sola Kola Street", R.drawable.school8));
-        places.add(new Place("The Primelight Schools", "Francis Onajinrin St", R.drawable.school9));
-        places.add(new Place("Unique Blossom School", "1 Ikorodu-Ososun Rd", R.drawable.school10));
+        places.add(new Place("Blessed Inn", "Benson Road", R.drawable.hotel1));
+        places.add(new Place("Tobisco Hotel", "Odogunyan, Ikorodu", R.drawable.hotel2));
+        places.add(new Place("Sheraton and Suites", "Ikorodu road", R.drawable.hotel3));
+        places.add(new Place("Eko Hotel", "Gani Street, Ebute road", R.drawable.hotel4));
+        places.add(new Place("Lovers Nest", " Lowa estate", R.drawable.hotel5));
+        places.add(new Place("Crossed,", "Bayeku, Ikorodu", R.drawable.hotel6));
+        places.add(new Place("The LightHouse", "Ijede Rd, Ijede", R.drawable.hotel7));
+        places.add(new Place("Happy Place", "Kola Street, Wera", R.drawable.hotel8));
+        places.add(new Place("Bird's Nest", "United Estate, Eyita", R.drawable.hotel9));
+        places.add(new Place("Blossom", "Majidun Road, Ogolonto", R.drawable.hotel10));
 
         // Create an {@link PlacesAdapter}, whose data source is a list of {@link Place}s. The
         // adapter knows how to create list items for each item in the list.

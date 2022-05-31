@@ -33,16 +33,16 @@ public class HospitalFragment extends Fragment {
         // Create a list of places
         final ArrayList<Place> places = new ArrayList<>();
 
-        places.add(new Place("Genius Preparatory School", "31 Femi Isara Street", R.drawable.hospital1));
-        places.add(new Place("Landmark College", "5/11 Olayinka Ogunfile Street", R.drawable.hospital2));
-        places.add(new Place("Lyncrest Schools", "Kayode Shokunbi Street", R.drawable.hospital3));
-        places.add(new Place("At-Tanzeel Schools", "3, Faniyi Street, Ebute road", R.drawable.hospital4));
-        places.add(new Place("Centcas School", " Lowa, 23 Olufunke Mabadeje St", R.drawable.hospital5));
-        places.add(new Place("ROOSEVELT SCHOOLS,", "170, igbogbo Bayeku Road", R.drawable.hospital6));
-        places.add(new Place("LightHouse International School", "Ijede Rd", R.drawable.hospital7));
-        places.add(new Place("Great Joy Schools", "13/15 Sola Kola Street", R.drawable.hospital8));
-        places.add(new Place("The Primelight Schools", "Francis Onajinrin St", R.drawable.hospital9));
-        places.add(new Place("Unique Blossom School", "1 Ikorodu-Ososun Rd", R.drawable.hospital10));
+        places.add(new Place("Holy Cross", "4 Building road Street", R.drawable.hospital1));
+        places.add(new Place("Benny Care", "11, Igbeyandun Street", R.drawable.hospital2));
+        places.add(new Place("The Cathedral", "14, Benson road", R.drawable.hospital3));
+        places.add(new Place("Ogunmoleko Hospital", "Agric bustop, Ikorodu", R.drawable.hospital4));
+        places.add(new Place("Fertility Hospital", "Ebute Road, Ikorodu", R.drawable.hospital5));
+        places.add(new Place("Mother's care", "Bayeku Road, Ikorodu", R.drawable.hospital6));
+        places.add(new Place("ST Mary's", "Ijede Rd, Ikorodu", R.drawable.hospital7));
+        places.add(new Place("Blue Ccross", "13/15 Kolawole Street, Eyita", R.drawable.hospital8));
+        places.add(new Place("Triple Cross", "45 Francis Onajinrin St", R.drawable.hospital9));
+        places.add(new Place("Unique Blossom", "1 Ikorodu-Ososun Rd", R.drawable.hospital10));
 
         // Create an {@link PlacesAdapter}, whose data source is a list of {@link Place}s. The
         // adapter knows how to create list items for each item in the list.
