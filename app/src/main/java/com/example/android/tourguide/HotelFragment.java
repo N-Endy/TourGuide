@@ -33,16 +33,16 @@ public class HotelFragment extends Fragment {
         // Create a list of places
         final ArrayList<Place> places = new ArrayList<>();
 
-        places.add(new Place("Blessed Inn", "Benson Road", R.drawable.hotel1));
-        places.add(new Place("Tobisco Hotel", "Odogunyan, Ikorodu", R.drawable.hotel2));
-        places.add(new Place("Sheraton and Suites", "Ikorodu road", R.drawable.hotel3));
-        places.add(new Place("Eko Hotel", "Gani Street, Ebute road", R.drawable.hotel4));
-        places.add(new Place("Lovers Nest", " Lowa estate", R.drawable.hotel5));
-        places.add(new Place("Crossed,", "Bayeku, Ikorodu", R.drawable.hotel6));
-        places.add(new Place("The LightHouse", "Ijede Rd, Ijede", R.drawable.hotel7));
-        places.add(new Place("Happy Place", "Kola Street, Wera", R.drawable.hotel8));
-        places.add(new Place("Bird's Nest", "United Estate, Eyita", R.drawable.hotel9));
-        places.add(new Place("Blossom", "Majidun Road, Ogolonto", R.drawable.hotel10));
+        places.add(new Place(R.string.blessed_name, R.string.blessed_address, R.drawable.hotel1));
+        places.add(new Place(R.string.tobisco_name, R.string.tobisco_address, R.drawable.hotel2));
+        places.add(new Place(R.string.sheraton_name, R.string.sheraton_address, R.drawable.hotel3));
+        places.add(new Place(R.string.eko_name, R.string.eko_name, R.drawable.hotel4));
+        places.add(new Place(R.string.lovers_name, R.string.lovers_address, R.drawable.hotel5));
+        places.add(new Place(R.string.crossed_name, R.string.crossed_address, R.drawable.hotel6));
+        places.add(new Place(R.string.lighthouse_name, R.string.lighthouse_address, R.drawable.hotel7));
+        places.add(new Place(R.string.happy_name, R.string.happy_address, R.drawable.hotel8));
+        places.add(new Place(R.string.bird_name, R.string.bird_address, R.drawable.hotel9));
+        places.add(new Place(R.string.blossom_name, R.string.blossom_address, R.drawable.hotel10));
 
         // Create an {@link PlacesAdapter}, whose data source is a list of {@link Place}s. The
         // adapter knows how to create list items for each item in the list.
