@@ -74,4 +74,24 @@
     <string name="bird_address">United Estate, Eyita</string>
     <string name="blossomh_name">Blossom</string>
     <string name="blossomh_address">Madjidun Road, Ogolonto</string>
+
+    // Strings for Hospital
+    <string name="holycross_name">Holy Cross</string>
+    <string name="holycross_address">4 Building road Street</string>
+    <string name="benny_name">Benny Care</string>
+    <string name="benny_address">11, Igbeyandun Street</string>
+    <string name="ogunmoleko_name">Ogunmoleko Hospital</string>
+    <string name="ogunmoleko_address">Agric bustop, Ikorodu</string>
+    <string name="fertility_name">Fertility Hospital</string>
+    <string name="fertility_address">Ebute Road, Ikorodu</string>
+    <string name="mother_name">Mother\'s Care</string>
+    <string name="mother_address">Bayeku Road, Ikorodu</string>
+    <string name="stmary_name">St Mary\'s</string>
+    <string name="stmary_address">Ijede Road, Ikorodu</string>
+    <string name="bluecross_name">Blue Cross</string>
+    <string name="bluecross_address">13/15 Kolawole Street, Eyita</string>
+    <string name="triple_name">Triple Cross</string>
+    <string name="triple_address">45 Francis Onajinrin St</string>
+    <string name="unique_name">Unique Blossom</string>
+    <string name="unique_address">1 Ikorodu-Ososun Rd</string>
 </resources>
