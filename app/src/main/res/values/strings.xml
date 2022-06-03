@@ -8,4 +8,8 @@
     <string name="category_fast_food">Food</string>
     <string name="category_hospital">Hospital</string>
     <string name="category_hotel">Hotel</string>
+
+    // String for Schools
+    <string name="genius_name">"Genius Preparatory School"</string>
+    <string name="genius_address">"31 Femi Isara Street"</string>
 </resources>

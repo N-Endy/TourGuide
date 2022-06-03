@@ -8,10 +8,10 @@ package com.example.android.tourguide;
 public class Place {
 
     /** String resource ID for the default translation of the word */
-    private String mNameId;
+    private int mNameId;
 
     /** String resource ID for the Miwok translation of the word */
-    private String mAddressId;
+    private int mAddressId;
 
     /** Image resource ID for the word */
     private int mImageResourceId = NO_IMAGE_PROVIDED;
@@ -25,7 +25,7 @@ public class Place {
      * @param nameId is the name of the location
      * @param addressId is the address of the place
      */
-    public Place(String nameId, String addressId) {
+    public Place(int nameId, int addressId) {
         mNameId = nameId;
         mAddressId = addressId;
     }
@@ -37,7 +37,7 @@ public class Place {
      * @param addressId is the address of the place
      * @param imageResourceId is the drawable resource ID for the image associated with the place
      */
-    public Place(String nameId, String addressId, int imageResourceId) {
+    public Place(int nameId, int addressId, int imageResourceId) {
         mNameId = nameId;
         mAddressId = addressId;
         mImageResourceId = imageResourceId;
@@ -46,14 +46,14 @@ public class Place {
     /**
      * Get the string resource ID for the name of the place.
      */
-    public String getNameId() {
+    public int getNameId() {
         return mNameId;
     }
 
     /**
      * Get the string resource ID for the address of the place.
      */
-    public String getAddressId() {
+    public int getAddressId() {
         return mAddressId;
     }
 

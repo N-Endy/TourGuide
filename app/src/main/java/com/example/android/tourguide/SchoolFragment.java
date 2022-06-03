@@ -33,7 +33,7 @@ public class SchoolFragment extends Fragment {
         // Create a list of places
         final ArrayList<Place> places = new ArrayList<>();
 
-        places.add(new Place("Genius Preparatory School", "31 Femi Isara Street", R.drawable.school1));
+        places.add(new Place("Genius Preparatory School", R.string.genius_address, R.drawable.school1));
         places.add(new Place("Landmark College", "5/11 Olayinka Ogunfile Street", R.drawable.school2));
         places.add(new Place("Lyncrest Schools", "Kayode Shokunbi Street", R.drawable.school3));
         places.add(new Place("At-Tanzeel Schools", "3, Faniyi Street, Ebute road", R.drawable.school4));
