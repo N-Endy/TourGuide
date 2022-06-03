@@ -52,4 +52,26 @@
     <string name="place_address">Francis Onajinrin St</string>
     <string name="yummy_name">Yummy Yummy</string>
     <string name="yummy_address">1 Ikorodu-Ososun Rd</string>
+
+    // String for Hotels
+    <string name="blessed_name">Blesses Inn</string>
+    <string name="blessed_address">Benson Road</string>
+    <string name="tobisco_name">Tobisco Hotel</string>
+    <string name="tobisco_address">Odogunyan, Ikorodu</string>
+    <string name="sheraton_name">Sheraton Hotel and Suites</string>
+    <string name="sheraton_address">Ikorodu Road</string>
+    <string name="eko_name">Eko Hotel</string>
+    <string name="eko_address">Gani Street, Ebute road</string>
+    <string name="lovers_name">Lovers Nest</string>
+    <string name="lovers_address">Lowa, Ikorodu</string>
+    <string name="crossed_name">Crossed</string>
+    <string name="crossed_address">Bayeku, Ikorodu</string>
+    <string name="light_name">The Lighthouse</string>
+    <string name="light_address">Ijede Road, Ijede</string>
+    <string name="happy_name">Happy Place</string>
+    <string name="happy_address">Kola Street, Wera</string>
+    <string name="bird_name">Bird Nest</string>
+    <string name="bird_address">United Estate, Eyita</string>
+    <string name="blossomh_name">Blossom</string>
+    <string name="blossomh_address">Madjidun Road, Ogolonto</string>
 </resources>
