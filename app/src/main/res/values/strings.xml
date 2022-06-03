@@ -36,7 +36,8 @@
     <string name="cheesy_address">Eyita Estate</string>
     <string name="chinese_name">Chinese Restaurante</string>
     <string name="chinese_address">Agric, Ikorodu</string>
-    <string name="KFC">14, Shorodoye Street</string>
+    <string name="kfc_name">KFC</string>
+    <string name="kfc_address">14, Shorodoye Street</string>
     <string name="kiddies_name">Kiddies Choice</string>
     <string name="kiddies_address">Ebute Road</string>
     <string name="lacebo_name">Lacebo</string>

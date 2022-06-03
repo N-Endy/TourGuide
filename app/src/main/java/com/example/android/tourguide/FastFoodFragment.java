@@ -33,16 +33,16 @@ public class FastFoodFragment extends Fragment {
         // Create a list of places
         final ArrayList<Place> places = new ArrayList<>();
 
-        places.add(new Place("Cheesy Feel", "Eyita Estate", R.drawable.food1));
-        places.add(new Place("Chinese Restaurante", "Agric, Ikorodu", R.drawable.food2));
-        places.add(new Place("KFC", "14, Shorodoye Street", R.drawable.food10));
-        places.add(new Place("Kiddies Choice", "Ebute road", R.drawable.food3));
-        places.add(new Place("Lacebo", "Placebo Palace, Ijede", R.drawable.food4));
-        places.add(new Place("Mr Biggs", "Igbogbo Bayeku Road", R.drawable.food6));
-        places.add(new Place("Tantalizers", "Ikorodu Rd", R.drawable.food7));
-        places.add(new Place("Tastee Fried", "1 Benson Bustop", R.drawable.food8));
-        places.add(new Place("The Place", "Francis Onajinrin St", R.drawable.food9));
-        places.add(new Place("Yummy Yummy", "1 Ikorodu-Ososun Rd", R.drawable.food5));
+        places.add(new Place(R.string.cheesy_name, R.string.cheesy_address, R.drawable.food1));
+        places.add(new Place(R.string.chinese_name, R.string.chinese_address, R.drawable.food2));
+        places.add(new Place(R.string.kfc_name, R.string.kfc_address, R.drawable.food10));
+        places.add(new Place(R.string.kiddies_name, R.string.kiddies_address, R.drawable.food3));
+        places.add(new Place(R.string.lacebo_name, R.string.lacebo_address, R.drawable.food4));
+        places.add(new Place(R.string.biggs_name, R.string.biggs_address, R.drawable.food6));
+        places.add(new Place(R.string.tantalizer_name, R.string.tantalizer_address, R.drawable.food7));
+        places.add(new Place(R.string.tastee_name, R.string.tastee_address, R.drawable.food8));
+        places.add(new Place(R.string.place_name, R.string.place_address, R.drawable.food9));
+        places.add(new Place(R.string.yummy_name, R.string.yummy_address, R.drawable.food5));
 
         // Create an {@link PlacesAdapter}, whose data source is a list of {@link Place}s. The
         // adapter knows how to create list items for each item in the list.
