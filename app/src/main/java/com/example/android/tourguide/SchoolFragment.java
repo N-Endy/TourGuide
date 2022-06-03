@@ -34,15 +34,15 @@ public class SchoolFragment extends Fragment {
         final ArrayList<Place> places = new ArrayList<>();
 
         places.add(new Place(R.string.genius_name, R.string.genius_address, R.drawable.school1));
-        places.add(new Place("Landmark College", "5/11 Olayinka Ogunfile Street", R.drawable.school2));
-        places.add(new Place("Lyncrest Schools", "Kayode Shokunbi Street", R.drawable.school3));
-        places.add(new Place("At-Tanzeel Schools", "3, Faniyi Street, Ebute road", R.drawable.school4));
-        places.add(new Place("Centcas School", " Lowa, 23 Olufunke Mabadeje St", R.drawable.school5));
-        places.add(new Place("ROOSEVELT SCHOOLS,", "170, igbogbo Bayeku Road", R.drawable.school6));
-        places.add(new Place("LightHouse International School", "Ijede Rd", R.drawable.school7));
-        places.add(new Place("Great Joy Schools", "13/15 Sola Kola Street", R.drawable.school8));
-        places.add(new Place("The Primelight Schools", "Francis Onajinrin St", R.drawable.school9));
-        places.add(new Place("Unique Blossom School", "1 Ikorodu-Ososun Rd", R.drawable.school10));
+        places.add(new Place(R.string.landmark_name, R.string.landmark_address, R.drawable.school2));
+        places.add(new Place(R.string.lyncrest_name, R.string.lyncrest_address, R.drawable.school3));
+        places.add(new Place(R.string.tanzeel_name, R.string.tanzeel_address, R.drawable.school4));
+        places.add(new Place(R.string.centcas_name, R.string.centcas_address, R.drawable.school5));
+        places.add(new Place(R.string.roosevelt_name, R.string.roosevelt_address, R.drawable.school6));
+        places.add(new Place(R.string.lighthouse_name, R.string.lighthouse_address, R.drawable.school7));
+        places.add(new Place(R.string.great_name, R.string.great_address, R.drawable.school8));
+        places.add(new Place(R.string.primelight_name, R.string.primelight_address, R.drawable.school9));
+        places.add(new Place(R.string.blossom_name, R.string.blossom_address, R.drawable.school10));
 
         // Create an {@link PlacesAdapter}, whose data source is a list of {@link Place}s. The
         // adapter knows how to create list items for each item in the list.
