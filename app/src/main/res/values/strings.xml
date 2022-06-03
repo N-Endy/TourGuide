@@ -10,6 +10,22 @@
     <string name="category_hotel">Hotel</string>
 
     // String for Schools
-    <string name="genius_name">"Genius Preparatory School"</string>
-    <string name="genius_address">"31 Femi Isara Street"</string>
+    <string name="genius_name">Genius Preparatory School</string>
+    <string name="genius_address">31 Femi Isara Street</string>
+    <string name="landmark_name">Landmark College</string>
+    <string name="landmark_address">5/11 Olayinka Ogunfile Street</string>
+    <string name="lyncrest_name">Lyncrest Schools</string>
+    <string name="lyncrest_address">Kayode Shokunbi Street</string>
+    <string name="tanzeel_name">At-Tanzeel Schools</string>
+    <string name="tanzeel_address">3, Faniyi Street, Ebute road</string>
+    <string name="centcas_name">Centcas School</string>
+    <string name="centcas_address">Lowa, 23 Olufunke Mabadeje St</string>
+    <string name="roosevelt_name">ROOSEVELT SCHOOLS</string>
+    <string name="roosevelt_address">170, igbogbo Bayeku Road</string>
+    <string name="lighthouse_name">LightHouse International School</string>
+    <string name="lighthouse_address">Ijede Rd</string>
+    <string name="primelight_name">The Primelight Schools</string>
+    <string name="primelight_address">Francis Onajinrin St</string>
+    <string name="blossom_name">Unique Blossom School</string>
+    <string name="blossom_address">1 Ikorodu-Ososun Rd</string>
 </resources>
