@@ -40,7 +40,7 @@ public class FastFoodFragment extends Fragment {
         places.add(new Place("Lacebo", "Placebo Palace, Ijede", R.drawable.food4));
         places.add(new Place("Mr Biggs", "Igbogbo Bayeku Road", R.drawable.food6));
         places.add(new Place("Tantalizers", "Ikorodu Rd", R.drawable.food7));
-        places.add(new Place("Tastee Fried", "1Benson Bustop", R.drawable.food8));
+        places.add(new Place("Tastee Fried", "1 Benson Bustop", R.drawable.food8));
         places.add(new Place("The Place", "Francis Onajinrin St", R.drawable.food9));
         places.add(new Place("Yummy Yummy", "1 Ikorodu-Ososun Rd", R.drawable.food5));
 

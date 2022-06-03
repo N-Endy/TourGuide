@@ -30,4 +30,25 @@
     <string name="primelight_address">Francis Onajinrin St</string>
     <string name="blossom_name">Unique Blossom School</string>
     <string name="blossom_address">1 Ikorodu-Ososun Rd</string>
+
+    // Strings for Food
+    <string name="cheesy_name">Cheesy Feel</string>
+    <string name="cheesy_address">Eyita Estate</string>
+    <string name="chinese_name">Chinese Restaurante</string>
+    <string name="chinese_address">Agric, Ikorodu</string>
+    <string name="KFC">14, Shorodoye Street</string>
+    <string name="kiddies_name">Kiddies Choice</string>
+    <string name="kiddies_address">Ebute Road</string>
+    <string name="lacebo_name">Lacebo</string>
+    <string name="lacebo_address">Placebo Palace, Ijede</string>
+    <string name="biggs_name">Mr Biggs</string>
+    <string name="biggs_address">Igbogbo Bayeku Road</string>
+    <string name="tantalizer_name">Tantalizers</string>
+    <string name="tantalizer_address">Ikorodu Road</string>
+    <string name="tastee_name">Tastee Fried</string>
+    <string name="tastee_address">1 Benson Road</string>
+    <string name="place_name">The Place</string>
+    <string name="place_address">Francis Onajinrin St</string>
+    <string name="yummy_name">Yummy Yummy</string>
+    <string name="yummy_address">1 Ikorodu-Ososun Rd</string>
 </resources>
